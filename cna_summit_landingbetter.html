@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CNA | Adobe Summit 2026</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Adobe Clean', 'Inter', sans-serif; background: #f5f5f5; color: #1a1a1a; }
+
+  .hero {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 56px 32px 48px;
+    text-align: center;
+  }
+  .hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #eb1000;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .hero h1 span { color: #eb1000; }
+  .hero-sub {
+    font-size: 15px;
+    color: #aaa;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  .focus-bar {
+    background: #eb1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .focus-item {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-right: 1px solid rgba(255,255,255,0.25);
+  }
+  .focus-item:last-child { border-right: none; }
+
+  .page { max-width: 960px; margin: 0 auto; padding: 40px 24px 60px; }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #eb1000;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #eb1000;
+    display: inline-block;
+  }
+
+  .section { margin-bottom: 48px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-top { display: flex; align-items: flex-start; gap: 10px; }
+  .badge {
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .badge.lab { background: #eb1000; }
+  .badge.skill { background: #444; }
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
+  }
+  .card-type {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+  .card-desc {
+    font-size: 13px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .card-link {
+    margin-top: auto;
+    padding-top: 10px;
+  }
+  .card-link a {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #eb1000;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s;
+  }
+  .card-link a:hover { border-color: #eb1000; }
+
+  .summary-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-top: 16px; }
+  .summary-group {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 16px;
+  }
+  .summary-group-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #eb1000;
+    margin-bottom: 10px;
+  }
+  .summary-group ul { list-style: none; }
+  .summary-group li {
+    font-size: 12px;
+    color: #333;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 1.4;
+  }
+  .summary-group li:last-child { border-bottom: none; }
+  .session-id { font-weight: 600; color: #1a1a1a; }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #e0e0e0;
+    background: #fff;
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-eyebrow">Adobe Summit 2026 &mdash; Personalized Agenda</div>
+  <h1>Your <span>CNA</span> Summit Priority Path</h1>
+  <p class="hero-sub">A curated set of sessions and labs selected to align with CNA's 2026 initiatives across Workfront maturity, creative operations, and AI-powered personalization.</p>
+</div>
+
+<div class="focus-bar">
+  <div class="focus-item">Workfront AI</div>
+  <div class="focus-item">Creative Ops</div>
+  <div class="focus-item">AJO AI</div>
+  <div class="focus-item">Workfront ROI</div>
+</div>
+
+<div class="page">
+
+  <div class="section">
+    <div class="section-title">Workfront Hands-On Labs</div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge lab">L823</span>
+          <div>
+            <div class="card-title">Tips and Tricks to Maximize Agentic Capabilities in Adobe Workfront</div>
+            <div class="card-type">Hands-on Lab</div>
+          </div>
+        </div>
+        <div class="card-desc">The best lab for learning how Workfront AI Agents accelerate planning, routing, reviews, and productivity. Covers natural-language insights and AI-powered content review. Ideal for new Workfront customers who have not yet unlocked full capabilities.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=L823&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge lab">L821</span>
+          <div>
+            <div class="card-title">Take-off with Fusion! Go from 0 to Integration in 90 Minutes</div>
+            <div class="card-type">Hands-on Lab</div>
+          </div>
+        </div>
+        <div class="card-desc">An essential introduction to Workfront Fusion automation. Shows how to unify Workfront with Frame.io and other systems, and helps reduce manual operations and increase AI value.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=L821&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge lab">L820</span>
+          <div>
+            <div class="card-title">Marketing Planning and Metadata Strategy Lab</div>
+            <div class="card-type">Hands-on Lab</div>
+          </div>
+        </div>
+        <div class="card-desc">A must-attend for Workfront customers under 12 months. Builds Workfront Planning foundations including taxonomy, metadata, and structure. Critical for scaling without rework and directly impacts governance, visibility, and workflow quality.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=L820&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Workfront Sessions</div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge">S807</span>
+          <div>
+            <div class="card-title">AI and the Future of Adobe Workfront</div>
+            <div class="card-type">Session</div>
+          </div>
+        </div>
+        <div class="card-desc">Provides the product vision and roadmap for Workfront AI. Helps validate Workfront as a strategic investment and offers insight on where agentic workflows are headed next.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=S807&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge">S729</span>
+          <div>
+            <div class="card-title">A Bank's Blueprint for Agile Marketing and AI-Powered Experiences</div>
+            <div class="card-type">Session</div>
+          </div>
+        </div>
+        <div class="card-desc">A financial services-relevant Workfront transformation example. Shows how Workfront becomes the operational hub in regulated industries. Highly relevant for CNA's governance and workflow maturity.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=S729&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge skill">S908</span>
+          <div>
+            <div class="card-title">Skill Exchange: 5 Key Areas to Address in Your Workfront Implementation</div>
+            <div class="card-type">Skill Exchange Session</div>
+          </div>
+        </div>
+        <div class="card-desc">A perfect fit for a team six months into Workfront. Focuses on governance, documentation, UX, and sustainability. Helps avoid overbuilding early in the rollout and ensures successful long-term adoption.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=S908&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Workfront and Creative Cloud</div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge">S419</span>
+          <div>
+            <div class="card-title">PepsiCo and Adobe: Rebuilding Creative Foundations for the AI Era</div>
+            <div class="card-type">Session</div>
+          </div>
+        </div>
+        <div class="card-desc">A real-world example of Firefly, Frame.io, and Workfront at enterprise scale. Shows how large teams standardize creative workflow and accelerate delivery. An excellent model for CNA's creative operations, brand, and marketing teams.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=S419&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge lab">L421</span>
+          <div>
+            <div class="card-title">Create More, Launch Faster, and Stay on Brand with Adobe Express</div>
+            <div class="card-type">Hands-on Lab</div>
+          </div>
+        </div>
+        <div class="card-desc">Great for non-designers creating fast, on-brand content. Shows Express to Workfront workflows for a modern content supply chain and helps reduce bottlenecks on small asset creation.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=L421&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Marketo Engage and B2B</div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge">OS223</span>
+          <div>
+            <div class="card-title">Designing Marketo Engage for Scale: Inside Adobe's Revenue Engine</div>
+            <div class="card-type">Session &nbsp;|&nbsp; Marketo Engage, Marketo Measure</div>
+          </div>
+        </div>
+        <div class="card-desc">Shows how Adobe builds system-enforced lifecycle and CRM governance at scale. Covers scalable campaign systems and operational orchestration. A must-see for teams building enterprise Marketo architecture.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=OS223&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge">S201</span>
+          <div>
+            <div class="card-title">Future of Marketing Automation: B2B Customer Journeys Vision and Roadmap</div>
+            <div class="card-type">Session &nbsp;|&nbsp; Marketo Engage, AJO B2B Edition</div>
+          </div>
+        </div>
+        <div class="card-desc">Presents the vision for unified B2B orchestration using Marketo and AJO B2B. Covers agentic journeys and AI decisioning roadmap. Perfect for planning future-state B2B go-to-market strategy.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=S201&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">AJO and Journey Optimization</div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-top">
+          <span class="badge lab">L535</span>
+          <div>
+            <div class="card-title">Level Up Your AI and Agentic Skills in Adobe Journey Optimizer</div>
+            <div class="card-type">Hands-on Lab</div>
+          </div>
+        </div>
+        <div class="card-desc">The best AJO lab at Summit for AI. Covers Journey Agent, AI Decisioning, simulations, and testing. A great fit for CNA as an early exploration of AI-powered orchestration, and helps teams determine whether AJO fits future-state personalization.</div>
+        <div class="card-link"><a href="https://reg.adobe.com/flow/adobe/as26/sessions/page/catalog?search=L535&tab.allsessions=1643149273691001NFtR" target="_blank">Register &rarr;</a></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Full Itinerary at a Glance</div>
+    <div class="summary-grid">
+      <div class="summary-group">
+        <div class="summary-group-title">Workfront Labs</div>
+        <ul>
+          <li><span class="session-id">L823</span> &mdash; Agentic Capabilities</li>
+          <li><span class="session-id">L821</span> &mdash; Fusion Integration</li>
+          <li><span class="session-id">L820</span> &mdash; Planning &amp; Metadata</li>
+        </ul>
+      </div>
+      <div class="summary-group">
+        <div class="summary-group-title">Workfront Sessions</div>
+        <ul>
+          <li><span class="session-id">S807</span> &mdash; AI &amp; Future of Workfront</li>
+          <li><span class="session-id">S729</span> &mdash; Bank's Blueprint</li>
+          <li><span class="session-id">S908</span> &mdash; Implementation Best Practices</li>
+        </ul>
+      </div>
+      <div class="summary-group">
+        <div class="summary-group-title">Creative Cloud</div>
+        <ul>
+          <li><span class="session-id">S419</span> &mdash; PepsiCo Creative Foundations</li>
+          <li><span class="session-id">L421</span> &mdash; Adobe Express</li>
+        </ul>
+      </div>
+      <div class="summary-group">
+        <div class="summary-group-title">Marketo Engage &amp; B2B</div>
+        <ul>
+          <li><span class="session-id">OS223</span> &mdash; Marketo at Scale</li>
+          <li><span class="session-id">S201</span> &mdash; B2B Journeys Roadmap</li>
+        </ul>
+      </div>
+      <div class="summary-group">
+        <div class="summary-group-title">AJO Lab</div>
+        <ul>
+          <li><span class="session-id">L535</span> &mdash; AJO AI &amp; Journey Agent</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Prepared by Adobe &mdash; CNA Account Team &nbsp;|&nbsp; Adobe Summit 2026
+</footer>
+
+</body>
+</html>
